@@ -16,7 +16,7 @@ These are your indexes for your queries
 **/templates/circleinvite.html**<br/>
 An example of a HTML template that would be rendered using the Jinja2 templating engine
 - Example of leveraging the Google Image API in Jinja2 (40 pixels wide by tall, aspect ratio)
-  {{ member.pictureservingurl|replace('http', 'https') }}=s40{% else %}/img/icon57.png{% endif %}
+  `python{{ member.pictureservingurl|replace('http', 'https') }}=s40{% else %}/img/icon57.png{% endif %}`
 - Example of iterating over a loop in Jinja2
   {% for each_member in connectionsIMadeMemberList %}
 
