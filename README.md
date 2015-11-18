@@ -23,15 +23,12 @@ An example of a HTML template that would be rendered using the Jinja2 templating
 **/js/pages/stripepaymentauthwizard.js**<br/>
 An exampe of how you might like to do a little client side JavaScript simple field validation using Stripe's payment library
 
-Again, this is all pseudo code:
 **main.py**<br/>
 Your main execution program.
 - An example of how you can set an app secret_key for session cookies in Python (#>>> means the Python shell)<br/>
-  ```python
-  #>>> import uuid<br/>
-  #>>> x = uuid.uuid4()<br/>
-  #>>> x.bytes<br/>
-  ```
+  `#>>> import uuid`<br/>
+  `#>>> x = uuid.uuid4()`<br/>
+  `#>>> x.bytes`<br/>
 - An example of creating your own custom Jinja2 function for dynamic HTML rendering<br/>
   `@app.template_filter('format_cents_as_currency')`<br/>
     `def format_cents_as_currency_filter(value):`<br/>
