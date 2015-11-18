@@ -6,7 +6,7 @@ While I cannot put the codebase here, this will be instructive if you can read p
 - working with Managed Accounts in Stripe (purely an API implementation)
 - working with a combination of SQL and NoSQL datastores
 
-**app.yaml**
+**app.yaml**<br/>
 This is your starting point for configuration
 examplesecuredirectory - this calls out to a separate .app file for code execution. This would be useful if you have a separate codebase for handling "admins" for the web app, like Google Login auth users. Everything else (like regular non-admin, authenticated or not) falls to main.app
 
