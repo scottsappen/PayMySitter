@@ -1,10 +1,10 @@
 # PayMySitter
-A skeleton project of the real PayMySitter Python web application (www.paymysitter.com or paymysitter.appspot.com) running in Google Cloud Platform with Stripe payments integration.
+A skeleton project of the real PayMySitter Python web application (http://www.paymysitter.com or http://paymysitter.appspot.com) running in Google Cloud Platform with Stripe payments integration.
 
 While I cannot put the codebase here, this will be instructive if you can read pseudo-code:
 - learning how to put Python web apps up on GCP, formerly strictly GAE (Google App Engine)
 - working with Managed Accounts in Stripe (purely an API implementation)
-- working with a combination of SQL and NoSQL datastores
+- working with a combination of SQL and NoSQL datastores (use together for a nice combination of relational flexibility and massive scale)
 
 **app.yaml**<br/>
 This is your starting point for configuration<br/>
