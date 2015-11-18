@@ -11,100 +11,17 @@
 
         <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
 
-        <!-- Icons -->
-        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
-        <link rel="shortcut icon" href="/img/favicon.png">
-        <link rel="apple-touch-icon" href="/img/icon57.png" sizes="57x57">
-        <link rel="apple-touch-icon" href="/img/icon72.png" sizes="72x72">
-        <link rel="apple-touch-icon" href="/img/icon76.png" sizes="76x76">
-        <link rel="apple-touch-icon" href="/img/icon114.png" sizes="114x114">
-        <link rel="apple-touch-icon" href="/img/icon120.png" sizes="120x120">
-        <link rel="apple-touch-icon" href="/img/icon144.png" sizes="144x144">
-        <link rel="apple-touch-icon" href="/img/icon152.png" sizes="152x152">
-        <link rel="apple-touch-icon" href="/img/icon180.png" sizes="180x180">
-        <!-- END Icons -->
+        ....and so on
 
-        <!-- Stylesheets -->
-        <!-- Bootstrap is included in its original form, unaltered -->
-        <link rel="stylesheet" href="/css/bootstrap.min.css">
-
-        <!-- Related styles of various icon packs and plugins -->
-        <link rel="stylesheet" href="/css/base.css">
-
-        <!-- The main stylesheet of this template. All Bootstrap overwrites are defined in here -->
-        <link rel="stylesheet" href="/css/main.css">
-
-        <!-- Include a specific file here from css/themes/ folder to alter the default theme of the template -->
-        <link rel="stylesheet" href="/css/themes/coral.css">
-
-        <!-- The themes stylesheet of this template (for using specific theme color in individual elements - must included last) -->
-        <link rel="stylesheet" href="/css/themes.css">
-        <!-- END Stylesheets -->
-
-        <!-- Modernizr (browser feature detection library) & Respond.js (Enable responsive CSS code on browsers that don't support it, eg IE8) -->
-        <script src="/js/vendor/modernizr-2.7.1-respond-1.4.2.min.js"></script>
     </head>
     <body>
         <div id="page-wrapper">
             <div id="page-container" class="sidebar-partial sidebar-visible-lg  sidebar-no-animations">
                 <!-- Main Sidebar -->
                 <div id="sidebar">
-                    <!-- Wrapper for scrolling functionality -->
-                    <div id="sidebar-scroll">
-                        <!-- Sidebar Content -->
-                        <div class="sidebar-content">
 
-                           <!-- Brand -->
-                           <a href="/" class="sidebar-brand">
-                               <i class="gi gi-screenshot"></i>
-                               <span class="sidebar-nav-mini-hide">Home</span>
-                           </a>
-                           <!-- END Brand -->
+                    ....and so on
 
-                           <!-- Sidebar Navigation -->
-                            <ul class="sidebar-nav">
-                                <li class="sidebar-header">
-                                    <span class="sidebar-header-title">Circle</span>
-                                </li>
-                                <li>
-                                    <a href="/circle"><i class="gi gi-group sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">My Circle</span></a>
-                                </li>
-                                <li class="sidebar-header">
-                                    <span class="sidebar-header-title">Jobs</span>
-                                </li>
-                                <li>
-                                    <a href="/jobs"><i class="gi gi-calendar sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">My Jobs</span></a>
-                                </li>
-                                <li class="sidebar-header">
-                                    <span class="sidebar-header-title">Payments</span>
-                                </li>
-                                {% if member.membertype=="Parent" %}
-                                <li>
-                                    <a href="/payyoursitter"><i class="gi gi-usd sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Pay Sitter</span></a>
-                                </li>
-                                {% endif %}
-                                <li>
-                                    <a href="/paymenthistory"><i class="fa fa-line-chart sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">History</span></a>
-                                </li>
-                                <li class="sidebar-header">
-                                    <span class="sidebar-header-title">You</span>
-                                </li>
-                                <li>
-                                    <a href="/userprofile"><i class="gi gi-user sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">My Profile</span></a>
-                                </li>
-                                <li class="sidebar-header">
-                                    <span class="sidebar-header-title">Other</span>
-                                </li>
-                                <li>
-                                    <a href="/signout"><i class="gi gi-exit sidebar-nav-icon"></i> <span class="sidebar-nav-mini-hide">Sign out</span></a>
-                                </li>
-                            </ul>
-                            <!-- END Sidebar Navigation -->
-
-                        </div>
-                        <!-- END Sidebar Content -->
-                    </div>
-                    <!-- END Wrapper for scrolling functionality -->
                 </div>
                 <!-- END Main Sidebar -->
 
@@ -113,16 +30,9 @@
                     <header class="navbar navbar-default">
                         <!-- Left Header Navigation -->
                         <ul class="nav navbar-nav-custom">
-                            <!-- Main Sidebar Toggle Button -->
-                            <li>
-                                <a href="/" class="hidden-lg hidden-md">
-                                    PayMySitter
-                                </a>
-                                <span class="hidden-sm hidden-xs">
-                                    <h4 style="padding-top:5px;padding-left:10px;"><a href="/">PayMySitter</a></h4>
-                                </span>
-                            </li>
-                            <!-- END Main Sidebar Toggle Button -->
+
+                            ....and so on
+
                         </ul>
                         <!-- END Left Header Navigation -->
 
@@ -133,52 +43,9 @@
                                 <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">
                                     <img src="{% if member.pictureservingurl %}{{ member.pictureservingurl|replace('http', 'https') }}=s40{% else %}/img/icon57.png{% endif %}" alt="avatar"> <i class="fa fa-angle-down"></i>
                                 </a>
-                                <ul class="dropdown-menu dropdown-custom dropdown-menu-right">
-                                    <li>
-                                        <a href="/">
-                                           <i class="gi gi-screenshot pull-right"></i>
-                                            Home
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/circle">
-                                            <i class="gi gi-group pull-right"></i>
-                                            My Circle
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/jobs">
-                                            <i class="gi gi-calendar pull-right"></i>
-                                            My Jobs
-                                        </a>
-                                    </li>
-                                    {% if member.membertype=="Parent" %}
-                                    <li>
-                                        <a href="/payyoursitter">
-                                            <i class="gi gi-usd pull-right"></i>
-                                            Pay Sitter
-                                        </a>
-                                    </li>
-                                    {% endif %}
-                                    <li>
-                                        <a href="/paymenthistory">
-                                            <i class="fa fa-line-chart pull-right"></i>
-                                            Pay History
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/userprofile">
-                                            <i class="gi gi-user pull-right"></i>
-                                            My Profile
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="/signout">
-                                            <i class="gi gi-exit pull-right"></i>
-                                            Sign Out
-                                        </a>
-                                    </li>
-                                </ul>
+
+                                ....and so on
+
                             </li>
                             <!-- END User Dropdown -->
                         </ul>
@@ -189,13 +56,9 @@
                     <!-- Page content -->
                     <div id="page-content">
                         <!-- Fixed Top Header + Footer Header -->
-                        <div class="content-header">
-                            <div class="header-section">
-                                <h1>
-                                    <a href="/circle">My Circle</a> &#8674; Invite
-                                </h1>
-                            </div>
-                        </div>
+
+                        ....and so on
+
                         <!-- END Fixed Top Header + Footer Header -->
 
                         <div class="row">
@@ -224,81 +87,10 @@
                                     </div>
                                     {% endif %}
                                     {% endif %}
-                                    <div id="inputFormError" class="form-group" style="text-align:center;display:none;">
-                                      <br/>
-                                      <div class="row">
-                                        <div class="col-sm-6 col-sm-offset-3 alert alert-block alert-danger">
-                                          <strong>Oops!</strong>&nbsp;The recipient's first and last name and (email address or mobile number) must be provided.
-                                        </div>
-                                      </div>
-                                    </div>
-                                    {% if alertmessage %}
-                                    <br/>
-                                    <div class="form-group">
-                                      <div class="row">
-                                        <div class="col-sm-8 col-sm-offset-2">
-                                            {{ alertmessage|safe }}
-                                        </div>
-                                      </div>
-                                    </div>
-                                    {% endif %}
-                                    <div class="form-group">
-                                      <div class="row">
-                                        <h4><label class="col-lg-3 col-lg-offset-1 control-label" for="inputFirstname">First</label></h4>
-                                        <div class="col-lg-5">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><i class="fa fa-text-width"></i></div>
-                                                <input type="text" id="inputFirstname" name="inputFirstname" class="form-control input-md" placeholder="Recipient's first name..." value="{{ user_firstname }}" maxlength="50">
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <h4><label class="col-lg-3 col-lg-offset-1 control-label" for="inputLastname">Last</label></h4>
-                                        <div class="col-lg-5">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><i class="fa fa-text-width"></i></div>
-                                                <input type="text" id="inputLastname" name="inputLastname" class="form-control input-md" placeholder="Recipient's last name..." value="{{ user_lastname }}" maxlength="50">
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <div class="row">
-                                        <h4><label class="col-lg-3 col-lg-offset-1 control-label" for="inputMessage">Message</label></h4>
-                                        <div class="col-lg-5">
-                                            <div class="input-group">
-                                            <div class="input-group-addon"><i class="fa fa-comment-o"></i></div>
-                                            <textarea id="inputMessage" name="inputMessage" rows="3" class="form-control input-md" placeholder="Add a personal message...">{{ user_message }}</textarea>
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <div class="row" style="margin-top:10px;margin-bottom:0px;">
-                                        <div class="col-lg-8 col-lg-offset-2 text-center">
-                                          <h4 class="text-primary"><label class="control-label">AND</label></h4>
-                                        </div>
-                                      </div>
-                                      <div class="row" style="margin-bottom:5px;">
-                                        <h4><label class="col-lg-3 col-lg-offset-1 control-label" for="inputEmailAddress">Email</label></h4>
-                                        <div class="col-lg-5">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
-                                                <input type="email" id="inputEmailAddress" name="inputEmailAddress" class="form-control input-md" placeholder="Recipient's email address..." value="{{ user_emailaddress }}">
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <div class="row" style="margin-bottom:20px;">
-                                        <h4><label class="col-lg-3 col-lg-offset-1 control-label" for="inputMobilePhone"><span class="text-primary">OR</span> mobile #</label></h4>
-                                        <div class="col-lg-5">
-                                            <div class="input-group">
-                                                <div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
-                                                <input type="text" id="inputMobilePhone" name="inputMobilePhone" class="form-control input-md" placeholder="Recipient's mobile phone..." value="{{ user_mobilephone }}">
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <div class="row" style="margin-bottom:20px;">
-                                        <div class="col-md-6 col-md-offset-3 text-center">
-                                            <button type="submit" class="btn btn-lg btn-primary" id="btn_circle_invite"><i class="fa fa-check"></i>&nbsp;&nbsp;Invite</button>
-                                        </div>
-                                      </div>
-                                    </div>
+
+
+                                    ....and so on
+
                                 </form>
                                 <!-- END Horizontal Form Content -->
                             </div>
@@ -306,75 +98,7 @@
                           </div>
                         </div>
 
-                        <div class="row" style="margin-top:275px;">
-                        </div>
+                        ....and so on
 
-                        <div class="modal fade" id="pleaseWaitDialog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1>Working...</h1>
-                              </div>
-                              <div class="modal-body">
-                                <div class="progress progress-striped active">
-                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                    </div>
-                    <!-- END Page Content -->
-
-                    <!-- Footer -->
-                    <footer class="clearfix">
-                        <div class="text-center text-muted">
-                           Your sitter, our technology!
-                        </div>
-                    </footer>
-                    <!-- END Footer -->
-                </div>
-                <!-- END Main Container -->
-            </div>
-
-            <div class="modal fade" id="circleInviteExplainedModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title" id="myModalLabel">Circle Invites</h4>
-                  </div>
-                  <div class="modal-body">
-                    <h3>The circle concept</h3>
-                    <h4>The idea of the circle is easy. Your circle is a hand-picked group of babysitters and families that you trust with your childcare.</h4>
-                    <h3>If you are a sitter, your circle contains the families that you babysit for.  </h3>
-                    <h4>Whether the family invites you to their circle, or you request to be in a family's circle, this feature allows you to manage your jobs and contacts. To make payment seamless, don't forget to complete your banking information inside of your profile.</h4>
-                    <h3>If you are a parent, your circle is made up of your favorite babysitters and other families that you may share babysitters with.</h3>
-                    <h4>Inviting your babysitters to your circle is easy!  Just send them an invitation and the sitter will receive a notification to join PayMySitter.  After the sitter is in your circle, you can book and pay them right from the app.  Need a recommendation for a babysitter?  Connect with other families to view their sitters and connect with them from their profiles.  Don't want to share?  No problem!  You can keep your babysitters all to yourself by not connecting with other families.</h4>
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- END Page Container -->
-        </div>
-        <!-- END Page Wrapper -->
-
-        <!-- Scroll to top link, initialized in js/app.js - scrollToTop() -->
-        <a href="#" id="to-top"><i class="fa fa-angle-double-up"></i></a>
-
-        <!-- Include Jquery library from Google's CDN but if something goes wrong get Jquery from local file (Remove 'http:' if you have SSL) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        <script>!window.jQuery && document.write(decodeURI('%3Cscript src="/js/vendor/jquery-1.11.1.min.js"%3E%3C/script%3E'));</script>
-
-        <!-- Bootstrap.js, Jquery plugins and Custom JS code -->
-        <script src="/js/vendor/bootstrap.min.js"></script>
-        <script src="/js/plugins.js"></script>
-        <script src="/js/app.js"></script>
-        <script src="/js/pages/circleinvite.js"></script>
     </body>
 </html>
